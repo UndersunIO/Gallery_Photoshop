@@ -100,7 +100,7 @@ html {
 .menu {
   width: 4rem;
   height: 6rem;
-  background-color: #000;
+  background-color: rgb(135, 84, 84);
   position: fixed;
   top: 1rem;
   left: 5rem;
@@ -120,12 +120,20 @@ html {
   content: "";
   width: 0.3rem;
   height: 15rem;
-  background-color: #000;
+  background-color: rgb(171, 25, 25);
   position: absolute;
   top: -15rem;
   left: calc(50% - 0.15rem);
   box-shadow: 0.1rem 0rem 0.1rem #000;
-  /* transition: all 0.4s; */
+  transition: all 0.4s;
+}
+
+#cercle {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 5px;
+  background: rgb(255, 17, 0);
 }
 
 /* End of Navbar */
@@ -143,7 +151,7 @@ html {
 
 .section-1-icons i {
   font-size: 35rem;
-  color: #a79a2d;
+  color: #4b2da7;
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
   text-shadow: 0.2rem 0.2rem 0.2rem #000;
@@ -153,6 +161,7 @@ html {
 .section-1-icons i.change {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s 0.3s;
+ 
 }
 /* End of Section 1 */
 
@@ -179,7 +188,7 @@ html {
 
 .card {
   width: 30rem;
-  background-color: #a79a2d;
+  background-color: #5c2da7;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -239,7 +248,22 @@ html {
 
 .card-btn {
   width: 70%;
-  background-color: rgb(108, 157, 84);
+  background-color:  #8f8317;
+  color: rgb(227, 29, 29);
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  box-shadow: -0.2rem -0.2rem 0.2rem #000;
+}
+
+.card-btn:hover {
+  width: 70%;
+  background-color:  #000000;
   color: rgb(227, 29, 29);
   border-radius: 5rem;
   font-size: 1.5rem;
